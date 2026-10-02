@@ -35,8 +35,24 @@ h1{font:500 36px Georgia,serif;margin:5px 0}
 @media(max-width:800px){.top{flex-direction:column;align-items:start}.summary,.targets{grid-template-columns:1fr}.qsum,.qcards{grid-template-columns:1fr 1fr}.qfields{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){body{padding:10px}.qsum,.qcards{grid-template-columns:1fr}h1{font-size:30px}}
 </style>
-</head>
-<body>
+<style id="floating-hearts-v2">
+.fh-layer{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:9999}
+.fh-layer i{position:absolute;bottom:-48px;left:var(--x);font-style:normal;font-family:Georgia,serif;font-size:var(--s);color:var(--c);opacity:0;filter:drop-shadow(0 4px 10px rgba(118,151,190,.12));animation:fhRise var(--t) linear var(--d) infinite;will-change:transform,opacity}
+.fh-layer i::after{content:"";position:absolute;width:28px;height:28px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:currentColor;opacity:.07;filter:blur(8px)}
+@keyframes fhRise{0%{transform:translate3d(0,40px,0) rotate(-10deg) scale(.78);opacity:0}10%{opacity:.26}42%{transform:translate3d(22px,-42vh,0) rotate(7deg) scale(1);opacity:.22}72%{transform:translate3d(-18px,-76vh,0) rotate(-5deg) scale(.92);opacity:.18}100%{transform:translate3d(14px,-118vh,0) rotate(10deg) scale(.72);opacity:0}}
+@media(prefers-reduced-motion:reduce){.fh-layer i{animation-duration:32s}}
+</style></head>
+<body><div class="fh-layer" aria-hidden="true">
+<i style="--x:4%;--s:15px;--c:#9db8df;--t:19s;--d:0s">♡</i>
+<i style="--x:13%;--s:10px;--c:#d7a8b8;--t:24s;--d:4s">♥</i>
+<i style="--x:24%;--s:18px;--c:#9db8df;--t:22s;--d:8s">♡</i>
+<i style="--x:36%;--s:12px;--c:#b4c9df;--t:20s;--d:2s">♥</i>
+<i style="--x:49%;--s:14px;--c:#d7a8b8;--t:26s;--d:10s">♡</i>
+<i style="--x:62%;--s:19px;--c:#9db8df;--t:23s;--d:5s">♥</i>
+<i style="--x:75%;--s:11px;--c:#b4c9df;--t:21s;--d:12s">♡</i>
+<i style="--x:87%;--s:16px;--c:#d7a8b8;--t:25s;--d:7s">♥</i>
+<i style="--x:95%;--s:9px;--c:#9db8df;--t:18s;--d:14s">♡</i>
+</div>
 <div class="wrap">
 <header class="top">
 <div><div class="eyebrow">NEET 2027 / PLANNING</div><h1>Monthly Targets</h1><div class="sub">Targets + Question Log · month-wise independent data</div></div>

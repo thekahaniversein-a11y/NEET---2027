@@ -37,6 +37,34 @@ footer{padding:15px 30px;background:#fbfbf8;border-top:1px solid var(--line);fon
 @media(max-width:850px){.app{padding:10px}.shell{min-height:calc(100vh - 20px)}header{padding:20px}.brand{font-size:26px}main{padding:20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card{border-bottom:1px solid var(--line)}.card:nth-child(2n){border-right:0}.card:nth-last-child(-n+2){border-bottom:0}.layout{grid-template-columns:1fr}.hero h1{font-size:30px}}
 @media(max-width:430px){.app{padding:0}.shell{border:0;border-radius:0;min-height:100vh}header{padding:18px 16px}.brand{font-size:24px}.sub{font-size:9px;letter-spacing:.08em}.back{padding:9px;font-size:10px}.nav{padding:8px 10px;gap:2px}.nav button{font-size:10px;padding:9px 10px}main{padding:20px 14px 28px}.hero h1{font-size:29px}.card{padding:14px 12px}.card strong{font-size:24px}.card span{font-size:10px}.panel{padding:15px}.item{flex-direction:column}.item>.row{width:100%}.item>.row .btn{flex:1}footer{padding:13px 15px;flex-wrap:wrap}}
 
+
+/* SALAAR PALETTE REFRESH — soft ivory, ink, muted sage; no loud gradients */
+:root{
+ --ink:#202b32!important;--muted:#727c82!important;--line:#e4e7e5!important;
+ --paper:#ffffff!important;--soft:#f3f6f3!important;--accent:#718b7a!important;
+ --good:#4f7960!important;--primary:#526f60!important;--primary-light:#8da594!important;
+ --primary-dark:#405a4c!important;--secondary:#779487!important;--success:#4f7960!important;
+ --warning:#b58b4b!important;--danger:#b35e58!important;--bg:#f6f7f5!important;
+ --card:#ffffff!important;--text:#202b32!important;--text-secondary:#727c82!important;
+ --border:#e4e7e5!important;--header-bg:#ffffff!important;--footer-bg:#ffffff!important;
+ --shadow:0 5px 20px rgba(30,45,37,.045)!important;--shadow-sm:0 2px 8px rgba(30,45,37,.035)!important;
+}
+html,body{background:#f6f7f5!important;color:#202b32}
+button,.btn,.tab,.back,.nav button{transition:background .16s ease,border-color .16s ease,color .16s ease,transform .16s ease}
+button,.btn,.tab,.back,.nav button{border-color:#e0e5e1!important;color:#34453c}
+button:hover,.btn:hover,.tab:hover,.back:hover,.nav button:hover{background:#edf2ed!important;color:#2e4a3a!important;border-color:#cbd8cd!important}
+button.active,.tab.active,.nav button.active{background:#e7efe8!important;color:#345b42!important;border-color:#cfddcf!important}
+.card,.panel,.section,.stat,.subject,.qlog,.chapter,.link,.snap,.target,.tile,.box,.question-card,.question,.qcard,.item-card,.summary-card{
+ border-color:#e4e8e4!important;box-shadow:0 3px 14px rgba(35,48,39,.035)
+}
+input,select,textarea{color:#27352d}
+input:focus,select:focus,textarea:focus{outline-color:#9eb3a1!important;border-color:#9eb3a1!important}
+progress,.progress,.bar{accent-color:#718b7a}
+progress::-webkit-progress-value,.progress i,.bar i{background:#718b7a!important}
+a{color:#506f5a}
+::selection{background:#dce8dc;color:#24382b}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
 </style></head><body><div class="app"><div class="shell">
 <header><div><div class="eyebrow">Salaar • NEET-UG 2027</div><div class="brand">Study Workspace</div><div class="sub">Plan your study · Review mistakes · Track progress</div></div><a class="back" href="index.html">← Main Website</a></header>
 <nav class="nav" id="nav"><button class="active" data-view="overview">Overview</button><button data-view="mistakes">Mistake Book</button><button data-view="revision">Revision Planner</button><button data-view="focus">Focus Timer</button><button data-view="tasks">Task Manager</button><button data-view="analytics">Analytics</button></nav>

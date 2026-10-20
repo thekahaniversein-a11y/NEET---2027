@@ -191,6 +191,34 @@ input:focus,select:focus{border-color:#9fb1ba;box-shadow:0 0 0 3px #edf2f3}
 .fh-layer i::after{content:"";position:absolute;width:28px;height:28px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:currentColor;opacity:.07;filter:blur(8px)}
 @keyframes fhRise{0%{transform:translate3d(0,40px,0) rotate(-10deg) scale(.78);opacity:0}10%{opacity:.26}42%{transform:translate3d(22px,-42vh,0) rotate(7deg) scale(1);opacity:.22}72%{transform:translate3d(-18px,-76vh,0) rotate(-5deg) scale(.92);opacity:.18}100%{transform:translate3d(14px,-118vh,0) rotate(10deg) scale(.72);opacity:0}}
 @media(prefers-reduced-motion:reduce){.fh-layer i{animation-duration:32s}}
+
+/* SALAAR PALETTE REFRESH — soft ivory, ink, muted sage; no loud gradients */
+:root{
+ --ink:#202b32!important;--muted:#727c82!important;--line:#e4e7e5!important;
+ --paper:#ffffff!important;--soft:#f3f6f3!important;--accent:#718b7a!important;
+ --good:#4f7960!important;--primary:#526f60!important;--primary-light:#8da594!important;
+ --primary-dark:#405a4c!important;--secondary:#779487!important;--success:#4f7960!important;
+ --warning:#b58b4b!important;--danger:#b35e58!important;--bg:#f6f7f5!important;
+ --card:#ffffff!important;--text:#202b32!important;--text-secondary:#727c82!important;
+ --border:#e4e7e5!important;--header-bg:#ffffff!important;--footer-bg:#ffffff!important;
+ --shadow:0 5px 20px rgba(30,45,37,.045)!important;--shadow-sm:0 2px 8px rgba(30,45,37,.035)!important;
+}
+html,body{background:#f6f7f5!important;color:#202b32}
+button,.btn,.tab,.back,.nav button{transition:background .16s ease,border-color .16s ease,color .16s ease,transform .16s ease}
+button,.btn,.tab,.back,.nav button{border-color:#e0e5e1!important;color:#34453c}
+button:hover,.btn:hover,.tab:hover,.back:hover,.nav button:hover{background:#edf2ed!important;color:#2e4a3a!important;border-color:#cbd8cd!important}
+button.active,.tab.active,.nav button.active{background:#e7efe8!important;color:#345b42!important;border-color:#cfddcf!important}
+.card,.panel,.section,.stat,.subject,.qlog,.chapter,.link,.snap,.target,.tile,.box,.question-card,.question,.qcard,.item-card,.summary-card{
+ border-color:#e4e8e4!important;box-shadow:0 3px 14px rgba(35,48,39,.035)
+}
+input,select,textarea{color:#27352d}
+input:focus,select:focus,textarea:focus{outline-color:#9eb3a1!important;border-color:#9eb3a1!important}
+progress,.progress,.bar{accent-color:#718b7a}
+progress::-webkit-progress-value,.progress i,.bar i{background:#718b7a!important}
+a{color:#506f5a}
+::selection{background:#dce8dc;color:#24382b}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
 </style></head>
 
 <body data-tracker-version="5"><div class="fh-layer" aria-hidden="true">
